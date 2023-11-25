@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hồ Cá CSS3</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://c4.wallpaperflare.com/wallpaper/796/146/327/bottom-ocean-corals-multi-colored-wallpaper-preview.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+
+        #background {
+            position: relative;
+            width: 100%;
+            height: 800px;
+        }
+
+        #shark {
+            position: absolute;
+            left: 100px;
+            top: 200px;
+            width: 298px;
+            height: 149px; 
+            animation: Shark 10s linear infinite;
+            transform: scaleX(1);
+        }
+
+        @keyframes Shark {
+            0% { left: 100px; top: 200px; }
+            25% { left: 500px; top: 200px; }
+            50% { left: 900px; top: 200px; transform: scaleX(-1); }
+            75% { left: 500px; top: 200px; transform: scaleX(1); }
+            100% { left: 100px; top: 200px; }
+        }
+        #shark2 {
+            position: absolute;
+            left: 500px;
+            top: 300px;
+            width: 45px;
+            height: 149px; 
+            animation: Shark 70s linear infinite;
+            transform: scaleX(2);
+        }
+        @keyframes Shark2 {
+            0% { left: 100px; top: 200px; }
+            25% { left: 650px; top: 200px; }
+            50% { left: 900px; top: 200px; transform: scaleX(-1); }
+            75% { left: 500px; top: 200px; transform: scaleX(1); }
+            100% { left: 100px; top: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+<div id="background">
+    <div id="shark"><img src="https://sharkcoder.com/img/content/shark-outline.png" width="298" height="149" alt="Shark Image"></div>
+    <div id="shark2"><img src="Ảnh/Shark/pngwing.com.png" width="100" height="100" alt="Shark Image"></div>
+</div>
+
+</body>
+</html>
